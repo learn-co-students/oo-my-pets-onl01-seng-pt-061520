@@ -43,19 +43,23 @@ class Owner
   end
 
   def walk_dogs
-    Dog.all.each{|d| d.mood = "happy"}
+    # Dog.all.each{|d| d.mood = "happy"} changes all dogs moods, not a particular owner"s dog
+    dogs.each{|d| d.mood = "happy"}
   end
 
   def feed_cats
-    Cat.all.each{|c| c.mood = "happy"}
+    # Cat.all.each{|c| c.mood = "happy"} changes mood for all cats, not a particular owner's
+    cats.each{|c| c.mood = "happy"}
   end
 
   def sell_pets
-    Cat.all.each do |c|
+    # Cat.all.each do |c|
+    cats.each do |c|
       c.mood = "nervous"
       c.owner = nil
     end
-    Dog.all.each do |d|
+    # Dog.all.each do |d|
+    dogs.each do |d|
       d.mood = "nervous"
       d.owner = nil
     end
