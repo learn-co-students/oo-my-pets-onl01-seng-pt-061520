@@ -12,5 +12,7 @@ class Owner
     puts "I am a #{@species}"
   end
   
+  def self
+  
   
 end
