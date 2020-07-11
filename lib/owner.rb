@@ -40,9 +40,18 @@ class Owner
     
   end
   
-  def walk_dog
+  def walk_dogs
     
   end
   
+  def feed_cats
+    
+  end
+  
+  def sell_pets
+    
+  end
+  
+  def 
   
 end
