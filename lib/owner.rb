@@ -8,5 +8,5 @@ class Owner
     @@all << self
   end
   
-  def 
+  def say_species
 end
