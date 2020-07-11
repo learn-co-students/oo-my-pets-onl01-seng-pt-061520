@@ -4,5 +4,5 @@ class Cat
   
   @@all = []
   
-  
+  def initialize(name)
 end
