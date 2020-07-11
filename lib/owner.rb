@@ -41,7 +41,7 @@ class Owner
   end
   
   def walk_dogs
-    dogs.all
+    dogs.each
   end
   
   def feed_cats
