@@ -33,7 +33,7 @@ class Owner
   end
   
   def buy_cat(name)
-    
+    Cat.new()
   end
   
   def buy_dog(name)
