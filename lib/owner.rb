@@ -49,9 +49,13 @@ class Owner
   end
   
   def sell_pets
-    
+    cats.each
+      
   end
-  
+    dogs.each
+      
+  end
+
   def list_pets
     
   end
