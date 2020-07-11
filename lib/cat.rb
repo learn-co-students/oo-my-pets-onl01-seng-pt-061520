@@ -4,5 +4,5 @@ class Cat
   
   @@all = []
   
-  def initialize(name)
+  def initialize(name, owner, mood = "nervous")
 end
