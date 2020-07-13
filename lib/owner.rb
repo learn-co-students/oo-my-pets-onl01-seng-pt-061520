@@ -33,20 +33,15 @@ class Owner
   end
 
   def cats
-    Cat.all.select {|cat| cat.owner = self}
+    Cat.all.select {|cat| cat.owner == self}
   end
 
   def dogs
-    Dog.all.select {|dog| dog.owner = self}
+    Dog.all.select {|dog| dog.owner == self}
   end
 
   def buy_cat(cat)
     cat = Cat.new(cat, self)
-    # Cat.all.select {|cat| cat.name == name}
-    # binding.pry
-    #init with owner
-    #changes their mood
-    #knows about its cats
   end
 
   def buy_dog(name)
@@ -76,14 +71,7 @@ class Owner
   def sell_pets
     #can sell all it's pets, makes them nervous
     #can sell all its pets --> without an owner
-    # Cat.all.each do |cat|
-    #   if cat.owner = self
-    #     cat.mood = "nervous"
-    #     # binding.pry
-    #     cat.owner = nil
-    #     binding.pry
-    #   end
-    # end
+
     self.cats.each do |cat|
       cat.mood = "nervous"
       cat.owner = nil
@@ -91,7 +79,7 @@ class Owner
     # binding.pry
     self.dogs.each do |dog|
       dog.mood = "nervous"
-      # dog.owner = nil
+      dog.owner = nil
     end
 
   end
