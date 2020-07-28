@@ -1,3 +1,8 @@
+
+
 class Cat
-  # code goes here
-end
+  def initialize 
+    @name = name 
+  
+  end 
+end 
